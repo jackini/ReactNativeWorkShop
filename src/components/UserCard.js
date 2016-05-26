@@ -45,7 +45,7 @@ const styles = StyleSheet.create({
         },
         shadowRadius: 2
     }
-})
+});
 
 function UserCard({user}) {
     return (

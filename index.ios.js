@@ -1,13 +1,7 @@
-// /**
-//  * Sample React Native App
-//  * https://github.com/facebook/react-native
-//  * @flow
-//  */
-//
 
 import {
     AppRegistry
 } from 'react-native'
-import setUp from './js/setUp'
+import setUp from './src/setUp'
 
-AppRegistry.registerComponent('facehub', () => setUp)
+AppRegistry.registerComponent('facehub', () => setUp);

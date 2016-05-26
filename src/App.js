@@ -15,9 +15,9 @@ const styles = StyleSheet.create({
 
 class App extends Component {
     constructor() {
-        super()
+        super();
 
-        StatusBar.setBarStyle('light-content')
+        StatusBar.setBarStyle('light-content');
         this.dataSource = new ListView.DataSource({rowHasChanged: (r1, r2) => r1 !== r2})
     }
 
