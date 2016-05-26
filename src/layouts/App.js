@@ -1,10 +1,10 @@
-import React, {Component} from 'react';
-import {bindActionCreators} from 'redux'
-import {connect} from 'react-redux'
-import {View, StatusBar, StyleSheet, ListView} from 'react-native'
-import NavBar from './components/NavBar'
-import UserCard from './components/UserCard'
-import {fetchUserList} from './actions/userListAction'
+import React, {Component} from "react";
+import {bindActionCreators} from "redux";
+import {connect} from "react-redux";
+import {View, StatusBar, StyleSheet, ListView} from "react-native";
+import NavBar from "./../components/NavBar";
+import UserCard from "./../components/UserCard";
+import {fetchUserList} from "./../actions/userListAction";
 
 const styles = StyleSheet.create({
     container: {
@@ -26,7 +26,6 @@ class App extends Component {
     }
 
     render() {
-        console.warn(this.props.userList);
         let users = this.props.userList || [];
 
         const ds = this.dataSource.cloneWithRows(users);
@@ -45,7 +44,7 @@ class App extends Component {
 
 function mapProps(state) {
     return {
-        userList: state
+        userList: state.userList
     }
 }
 

@@ -1,4 +1,4 @@
-export const FETCH_USERS = 'FETCH_USERS';
+import {FETCH_USERS} from '../constants';
 
 const mockUsers = [
     {

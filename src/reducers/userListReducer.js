@@ -1,11 +1,11 @@
-import FETCH_USERS from '../reducers/userListReducer';
+import {FETCH_USERS} from '../constants';
 
-const initData = [];
+const initialState = [];
 
-export default function userListReducer(data = initData, action) {
+export default function userListReducer(state = initialState, action) {
     switch (action.type) {
         case  FETCH_USERS:
             return action.data;
     }
-    return action.data;
+    return state;
 }
