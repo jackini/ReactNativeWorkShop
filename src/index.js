@@ -1,8 +1,7 @@
-import {Provider} from "react-redux";
-import App from "./layouts/App";
-import React, {Component} from "react";
-import {bindActionCreators, connect} from "redux";
-import configureStore from "./store/configureStore";
+import {Provider} from 'react-redux';
+import App from './layouts/App';
+import React from 'react';
+import configureStore from './store/configureStore';
 
 let store = configureStore();
 

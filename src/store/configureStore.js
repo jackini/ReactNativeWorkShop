@@ -1,7 +1,7 @@
-import {createStore, applyMiddleware} from "redux";
-import thunkMiddleware from "redux-thunk";
-import createLogger from "redux-logger";
-import reducers from "../reducers/index";
+import {createStore, applyMiddleware} from 'redux';
+import thunkMiddleware from 'redux-thunk';
+import createLogger from 'redux-logger';
+import reducers from '../reducers/index';
 
 let middlewares = [
     thunkMiddleware
@@ -9,7 +9,7 @@ let middlewares = [
 
 const isDebuggingInChrome = __DEV__ && !!window.navigator.userAgent;
 const logger = createLogger({
-    predicate: (getState, action) => isDebuggingInChrome,
+    predicate: () => isDebuggingInChrome,
     collapsed: true,
     duration: true
 });

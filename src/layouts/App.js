@@ -1,10 +1,10 @@
-import React, {Component} from "react";
-import {bindActionCreators} from "redux";
-import {connect} from "react-redux";
-import {View, StatusBar, StyleSheet, ListView} from "react-native";
-import NavBar from "./../components/NavBar";
-import UserCard from "./../components/UserCard";
-import {fetchUserList} from "./../actions/userListAction";
+import React, {Component} from 'react';
+import {bindActionCreators} from 'redux';
+import {connect} from 'react-redux';
+import {View, StatusBar, StyleSheet, ListView} from 'react-native';
+import NavBar from './../components/NavBar';
+import UserCard from './../components/UserCard';
+import {fetchUserList} from './../actions/userListAction';
 
 const styles = StyleSheet.create({
     container: {
@@ -55,5 +55,3 @@ function mapDispatch(dispatch) {
 }
 
 export default connect(mapProps, mapDispatch)(App)
-
-

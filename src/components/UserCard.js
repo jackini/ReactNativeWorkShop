@@ -1,6 +1,5 @@
-import React from 'react'
-import {View, StyleSheet, Image, Text} from 'react-native'
-
+import React from 'react';
+import {View, StyleSheet, Image, Text} from 'react-native';
 
 const styles = StyleSheet.create({
     name: {
@@ -52,7 +51,7 @@ function UserCard({user}) {
         <View style={[styles.card, styles.shadow]}>
             <Image
                 style={styles.avatar}
-                source={{ uri: 'http://www.people.com.cn/mediafile/pic/20101103/9/1550245162796501193.jpg' }}
+                source={{ uri:user.photo }}
             />
             <View style={styles.textWrapper}>
                 <Text style={styles.name}>{user.name}</Text>
